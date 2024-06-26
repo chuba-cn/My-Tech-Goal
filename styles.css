@@ -1,0 +1,97 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.goal {
+    margin-bottom: 2rem;
+}
+
+.goal-title {
+    color: #4CAF50;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.goal-description {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.goal-details {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .goal-title {
+        font-size: 1.25rem;
+    }
+
+    .goal-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .title {
+        font-size: 1.25rem;
+    }
+
+    .goal-title {
+        font-size: 1rem;
+    }
+
+    .goal-description {
+        font-size: 0.8rem;
+    }
+}
