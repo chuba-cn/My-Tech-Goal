@@ -9,43 +9,50 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
   </head>
 
   <body>
-    <header class="header" data-testid="header">
-      <nav class="navbar" data-testid="navbar">
-        <a href="https://hngpremium.slack.com/team/U077PJLEP6Z" target="_blank">
-          <img
-            src="https://media.licdn.com/dms/image/D4D03AQGEfE2OAzUliw/profile-displayphoto-shrink_800_800/0/1708192324123?e=1724889600&v=beta&t=QlzYZtaEO8xY_-u638uLD8-EOcEUANvzbtonIFT5Nw8"
-            alt="Profile Picture"
-            class="profile-pic"
-            data-testid="profile-pic"
-          />
-        </a>
-        <span class="username" data-testid="username">
-            <a href="https://hngpremium.slack.com/team/U077PJLEP6Z" target="_blank">
-                <i class="fab fa-slack"></i> Chuba-Nwene. C
-            </a>
-        </span>
-      </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-username">
+        <span class="username" data-testid="slackDisplayName">
+        Chuba-Nwene.C
+      </span>
+      </div>
 
-    <div class="hero" data-testid="hero">
+      <div class="navbar-dateTime">
+        <p id="currentDay" class="" data-testid="currentDay"></p>
+        <p id="currentTimeUTC" data-testid="currentTimeUTC"></p>
+      </div>
+    </nav>
+  </header>
+
+    <div class="hero">
+      <div class="hero-slack-container">
+        <img
+          src="./assets/slack-profile-picture.jpg"
+          alt="Profile Picture"
+          class="profile-pic"
+          data-testid="slackProfilePicture"
+        />
+      </div>
+
       <div>
-        <h1 class="hero-title" data-testid="hero-title">
-          Welcome to My 2-Year Goals in Tech
+        <h1 class="hero-title">
+          Hi, I&apos;m Chuba
         </h1>
-        <p class="hero-subtitle" data-testid="hero-subtitle">
+        <p class="hero-subtitle">
           Join me on my journey to mastering web development
         </p>
       </div>
     </div>
 
-    <main class="main" data-testid="main">
+    <main class="main">
       <section class="goals-section">
-        <h2 class="section-title" data-testid="section-title">My Goals</h2>
-        <div class="goals-container" data-testid="goals-container">
-          <div class="goal-card" data-testid="goal-1">
+        <h2 class="section-title">My Goals</h2>
+        <div class="goals-container">
+          <div class="goal-card">
             <h3 class="goal-title">
               Master Advanced JavaScript and TypeScript
             </h3>
@@ -61,7 +68,7 @@
             </ul>
           </div>
 
-          <div class="goal-card" data-testid="goal-2">
+          <div class="goal-card">
             <h3 class="goal-title">Develop Expertise in a Backend Framework</h3>
             <p class="goal-description">
               Become proficient in a backend framework like NestJS or Django.
@@ -73,7 +80,7 @@
             </ul>
           </div>
 
-          <div class="goal-card" data-testid="goal-3">
+          <div class="goal-card">
             <h3 class="goal-title">Contribute to Open Source</h3>
             <p class="goal-description">
               Contribute to at least 3 open-source projects.
@@ -88,7 +95,7 @@
             </ul>
           </div>
 
-          <div class="goal-card" data-testid="goal-4">
+          <div class="goal-card">
             <h3 class="goal-title">Master Cloud Services and DevOps</h3>
             <p class="goal-description">
               Learn AWS/GCP/Azure and DevOps practices.
@@ -104,7 +111,7 @@
             </ul>
           </div>
 
-          <div class="goal-card" data-testid="goal-5">
+          <div class="goal-card">
             <h3 class="goal-title">Build a Personal Brand and Network</h3>
             <p class="goal-description">
               Create a tech blog and attend 5 industry conferences/meetups.
@@ -119,29 +126,21 @@
       </section>
     </main>
 
-    <footer class="footer" data-testid="footer">
-      <p>&copy; 2024 Chuba's Tech Journey</p>
+    <footer class="footer">
+      <p data-testid="slackEmail">chinemelumchubanwene57@gmail.com</p>
+
       <div class="social-links">
-        <a
-          href="https://x.com/C_chuba27"
-          target="_blank"
-          data-testid="twitter-link"
-        >
-          <i class="fab fa-twitter"></i>
+        <a href="https://hng.tech/learn" target="_blank" data-testid="hngLink">
+          Learn with HNG Tech&nbsp;
+          <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
-        <a
-          href="https://github.com/chuba-cn"
-          target="_blank"
-          data-testid="github-link"
-        >
-          <i class="fab fa-github"></i>
+        <a href="https://keyword.dog" target="_blank" data-testid="keywordLink">
+          Keyword Dog&nbsp;
+          <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
-        <a
-          href="https://www.linkedin.com/in/chinemelum-chuba-nwene-bb4098175"
-          target="_blank"
-          data-testid="linkedin-link"
-        >
-          <i class="fab fa-linkedin"></i>
+        <a href="https://scrapeanyweb.site" target="_blank" data-testid="scrapeanywebLink">
+          Scrape Any Web&nbsp;
+          <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
       </div>
     </footer>
